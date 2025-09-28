@@ -1,0 +1,119 @@
+# Games CRUD Operations
+
+## 1. Create a Game
+**POST** `http://localhost:8080/games`
+
+**Request Body (JSON):**
+{
+  "name": "Racing Simulator",
+  "description": "High-speed car racing game with VR headset",
+  "category": "Indoor",
+  "costPerMinute": "20.0"
+}
+```
+
+**Response:**
+
+{
+  "id": "1",
+  "name": "Racing Simulator",
+  "description": "High-speed car racing game with VR headset",
+  "category": "Indoor",
+  "costPerMinute": 20.0
+}
+
+
+## 2. Get Game by ID
+**Request:**
+`GET http://localhost:8080/games/1`
+
+**Response:**
+
+{
+  "id": 1,
+  "name": "Racing Simulator",
+  "description": "High-speed car racing game with VR headset",
+  "category": "Indoor",
+  "costPerMinute": 20.0
+}
+
+
+## 3. Get All Games
+**Request:**
+`GET http://localhost:8080/games`
+
+**Response:**
+
+[
+  {
+    "id": 1,
+    "name": "Racing Simulator",
+    "description": "High-speed car racing game with VR headset",
+    "category": "Indoor",
+    "costPerMinute": 20.0
+  },
+  {
+    "id":2,
+     "name":"GTA Vice City",
+    "description":"Violence , Violence , Violence",
+    "category":"Gangster",
+    "costPerMinute":"15.0"
+    "theme":"Been spendin' most their lives , Livin' in a gangsta's paradise"  
+    },
+    {
+    "id":3,
+    "name":"Hogwarts Legacy",
+    "description":"Aveda Kedavra",
+    "category":"Magic , Fantasy",
+    "costPerMinute":"25.0"
+    "theme":"Harry Potter is dead!!"
+    },
+    {
+    "id":4,
+   "name":"Valorant",
+    "description":"Pro Players for Pro Trauma! Die Hard game for Suiciding!",
+    "category":"Action",
+    "costPerMinute":"25.0"
+    "theme":"Pull the trigger , Let me blow your mind!"
+    },
+    {
+    "id":5,
+    "name":"Pokemon Legends: Arceus",
+    "description":"Gotta Catch em All",
+    "category":"Bug Caatching , Battle , Simulation",
+    "costPerMinute":"20.0"
+    "theme":"I wanna be the very best , like no one ever was!"
+    }
+]
+
+
+## 4. Update Game
+**PUT** `http://localhost:8080/games/1`
+
+**Request:**
+
+{
+  "id": 1,
+  "name": "Racing Simulator Pro",
+  "description": "High-speed car racing with enhanced graphics",
+  "category": "Indoor",
+  "costPerMinute": 40.0
+}
+
+**Response (After Update):**
+
+{
+  "id": 1,
+  "name": "Racing Simulator Pro",
+  "description": "High-speed car racing with enhanced graphics",
+  "category": "Indoor",
+  "costPerMinute": 40.0
+}
+
+## 5. Delete Game
+**DELETE** `http://localhost:8080/games/1`
+
+**Response:**
+```
+Delete Successfully...
+```

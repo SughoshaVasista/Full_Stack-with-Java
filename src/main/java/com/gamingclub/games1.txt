@@ -1,0 +1,122 @@
+CREATE GAME:
+Endpoint: POST/games
+
+POST: http://localhost:8080/games
+
+{
+    "name":"Racing Simulator",
+    "description":"Dhoom again we gotta break the rules and party all the time",
+    "category":"Racing",
+    "costPerMinute":"20.0"
+
+}
+
+//Response(201 Created)
+
+{
+    "id":"game_001",
+    "name":"Racing Simulator",
+    "description":"Dhoom again we gotta break the rules and party all the time",
+    "category":"Racing",
+    "costPerMinute":"20.0"
+    "theme":"Its been a long time without you friend , i will tell you all about it when I see you again!"
+}
+
+CREATE GAME:
+Endpoint: POST/games
+
+POST: http://localhost:8080/games
+
+{
+    "name":"GTA Vice City",
+    "description":"Violence , Violence , Violence",
+    "category":"Gangster",
+    "costPerMinute":"15.0"
+
+}
+
+//Response(201 Created)
+
+{
+    "id":"game_002",
+     "name":"GTA Vice City",
+    "description":"Violence , Violence , Violence",
+    "category":"Gangster",
+    "costPerMinute":"15.0"
+    "theme":"Been spendin' most their lives , Livin' in a gangsta's paradise"
+}
+
+CREATE GAME:
+Endpoint: POST/games
+
+POST: http://localhost:8080/games
+
+{
+    "name":"Hogwarts Legacy",
+    "description":"Aveda Kedavra",
+    "category":"Magic , Fantasy",
+    "costPerMinute":"25.0"
+
+}
+
+//Response(201 Created)
+
+{
+    "id":"game_003",
+    "name":"Hogwarts Legacy",
+    "description":"Aveda Kedavra",
+    "category":"Magic , Fantasy",
+    "costPerMinute":"25.0"
+    "theme":"Harry Potter is dead!!"
+}
+
+CREATE GAME:
+Endpoint: POST/games
+
+POST: http://localhost:8080/games
+
+{
+    "name":"Valorant",
+    "description":"Pro Players for Pro Trauma! Die Hard game for Suiciding!",
+    "category":"Action",
+    "costPerMinute":"25.0"
+
+}
+
+//Response(201 Created)
+
+{
+    "id":"game_004",
+   "name":"Valorant",
+    "description":"Pro Players for Pro Trauma! Die Hard game for Suiciding!",
+    "category":"Action",
+    "costPerMinute":"25.0"
+    "theme":"Pull the trigger , Let me blow your mind!"
+
+}
+
+CREATE GAME:
+Endpoint: POST/games
+
+POST: http://localhost:8080/games
+
+{
+    "name":"Pokemon Legends: Arceus",
+    "description":"Gotta Catch em All",
+    "category":"Bug Caatching , Battle , Simulation",
+    "costPerMinute":"20.0"
+
+}
+
+//Response(201 Created)
+
+{
+    "id":"game_005",
+    "name":"Pokemon Legends: Arceus",
+    "description":"Gotta Catch em All",
+    "category":"Bug Caatching , Battle , Simulation",
+    "costPerMinute":"20.0"
+    "theme":"I wanna be the very best , like no one ever was!"
+
+}
+
